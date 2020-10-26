@@ -1,0 +1,18 @@
+.why {
+  text-align: center;
+  background: var(--lightGrayBlue);
+  padding-top: 5em;
+}
+
+.why .copy {
+  margin-bottom: 4em;
+}
+
+.why-item .copy {
+  margin-bottom: 2em;
+}
+
+.why-item img {
+  margin-bottom: 1.5em;
+}
+/*# sourceMappingURL=why.css.map */
