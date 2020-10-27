@@ -1,6 +1,7 @@
 .hero{
     text-align: center;
     padding-bottom: 5em;
+    background: var(--veryLightGray);
     &-image{
         height: 300px;
         margin: 0 calc(-1 * var(--wrapperSpace));

@@ -1,11 +1,12 @@
 .why {
   text-align: center;
   background: var(--lightGrayBlue);
-  padding-top: 5em;
+  padding: 5em 0;
 }
 
 .why .copy {
   margin-bottom: 4em;
+  font-size: 1em;
 }
 
 .why-item .copy {

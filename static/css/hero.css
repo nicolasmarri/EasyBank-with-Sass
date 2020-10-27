@@ -1,6 +1,7 @@
 .hero {
   text-align: center;
   padding-bottom: 5em;
+  background: var(--veryLightGray);
 }
 
 .hero-image {

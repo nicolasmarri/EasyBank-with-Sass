@@ -11,6 +11,7 @@
 .hero {
   text-align: center;
   padding-bottom: 5em;
+  background: var(--veryLightGray);
 }
 
 .hero-image {
@@ -33,11 +34,12 @@
 .why {
   text-align: center;
   background: var(--lightGrayBlue);
-  padding-top: 5em;
+  padding: 5em 0;
 }
 
 .why .copy {
   margin-bottom: 4em;
+  font-size: 1em;
 }
 
 .why-item .copy {
@@ -46,6 +48,84 @@
 
 .why-item img {
   margin-bottom: 1.5em;
+}
+
+.latestArticles {
+  background: var(--veryLightGray);
+  padding: 5em 0;
+}
+
+.latestArticles .title-h1 {
+  text-align: center;
+}
+
+.latestArticles-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 2em;
+}
+
+.latestArticles-item {
+  border-radius: .5em;
+  overflow: hidden;
+  background: var(--white);
+}
+
+.latestArticles-item img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.latestArticles-item-content {
+  padding: 1.8em;
+}
+
+.latestArticles-item small {
+  color: var(--grayBlue);
+  margin-bottom: 1em;
+  display: block;
+}
+
+.latestArticles-item .copy {
+  color: var(--grayBlue);
+}
+
+.footer {
+  background: var(--darkBlue);
+  color: var(--white);
+  padding: 2em 0;
+  text-align: center;
+}
+
+.footer svg {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+
+.footer-social {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (25px)[5];
+      grid-template-columns: repeat(5, 25px);
+  grid-column-gap: 1em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2.5em 0;
+}
+
+.footer-link {
+  display: block;
+  color: var(--lightGrayBlue);
+  text-decoration: none;
+  margin-bottom: 2em;
+}
+
+.footer-copyright {
+  color: var(--grayBlue);
+  margin-top: 2em;
 }
 
 :root {
@@ -68,23 +148,40 @@ body {
 
 .wrapper {
   padding: 0 var(--wrapperSpace);
+  max-width: calc(1115px + 1.5em);
+  margin: auto;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.title {
-  border: 1px solid red;
-}
-
-.title-h1, .title-h2 {
+.title-h1 {
   font-size: 2.5em;
   color: var(--darkBlue);
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.3;
   margin: 0;
   margin-bottom: .5em;
 }
 
 .title-h2 {
+  font-size: 2.5em;
+  color: var(--darkBlue);
+  font-weight: 300;
+  line-height: 1.3;
+  margin: 0;
+  margin-bottom: .5em;
   font-size: 1.5em;
+}
+
+.title-h3 {
+  font-size: 2.5em;
+  color: var(--darkBlue);
+  font-weight: 300;
+  line-height: 1.3;
+  margin: 0;
+  margin-bottom: .5em;
+  font-size: 1em;
 }
 
 .copy {
@@ -92,16 +189,63 @@ body {
   font-size: .9em;
 }
 
-.is-hidden {
-  display: none;
-}
-
 .button {
+  border: none;
   padding: .9em 2.2em;
   font-size: 1em;
   border-radius: 1.5em;
   color: var(--white);
   background-image: -webkit-gradient(linear, left top, right top, from(var(--limeGreen)), to(var(--brightCyan)));
   background-image: linear-gradient(to right, var(--limeGreen) 0%, var(--brightCyan) 100%);
+}
+
+.icon-facebook {
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-image: url(../../static/img/icon-facebook.svg);
+}
+
+.icon-youtube {
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-image: url(../../static/img/icon-youtube.svg);
+}
+
+.icon-twitter {
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-image: url(../../static/img/icon-pinterest.svg);
+}
+
+.icon-pinterest {
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-image: url(../../static/img/icon-twitter.svg);
+}
+
+.icon-instagram {
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-image: url(../../static/img/icon-instagram.svg);
 }
 /*# sourceMappingURL=estilos.css.map */

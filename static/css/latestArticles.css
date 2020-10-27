@@ -1,0 +1,41 @@
+.latestArticles {
+  background: var(--veryLightGray);
+  padding: 5em 0;
+}
+
+.latestArticles .title-h1 {
+  text-align: center;
+}
+
+.latestArticles-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 2em;
+}
+
+.latestArticles-item {
+  border-radius: .5em;
+  overflow: hidden;
+  background: var(--white);
+}
+
+.latestArticles-item img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.latestArticles-item-content {
+  padding: 1.8em;
+}
+
+.latestArticles-item small {
+  color: var(--grayBlue);
+  margin-bottom: 1em;
+  display: block;
+}
+
+.latestArticles-item .copy {
+  color: var(--grayBlue);
+}
+/*# sourceMappingURL=latestArticles.css.map */

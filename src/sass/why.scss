@@ -1,13 +1,15 @@
 .why{
     text-align: center;
     background: var(--lightGrayBlue);
-    padding-top: 5em;
+    padding: 5em 0;
     .copy{
         margin-bottom: 4em;
+        font-size: 1em;
     }
     &-item{
         .copy{
             margin-bottom: 2em;
+            
         }
         img{
             margin-bottom: 1.5em;
