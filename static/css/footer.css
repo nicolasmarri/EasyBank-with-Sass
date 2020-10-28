@@ -5,9 +5,9 @@
   text-align: center;
 }
 
-.footer svg {
+.footer-logo {
   display: block;
-  margin: 0 auto;
+  margin: auto;
   margin-bottom: 2em;
 }
 
@@ -33,5 +33,50 @@
 .footer-copyright {
   color: var(--grayBlue);
   margin-top: 2em;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer .wrapper {
+    display: -ms-grid;
+    display: grid;
+    grid-column-gap: 7em;
+    -ms-grid-columns: 200px 1fr 400px;
+        grid-template-columns: 200px 1fr 400px;
+        grid-template-areas: "logo links button" "social links copyright";
+  }
+  .footer-links {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    grid-area: links;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    justify-items: start;
+  }
+  .footer-logo {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: logo;
+    margin: initial;
+  }
+  .footer-social {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: social;
+  }
+  .footer-button {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: button;
+    text-align: right;
+  }
+  .footer-copyright {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    grid-area: copyright;
+    text-align: right;
+  }
 }
 /*# sourceMappingURL=footer.css.map */

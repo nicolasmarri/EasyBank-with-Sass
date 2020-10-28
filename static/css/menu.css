@@ -1,5 +1,81 @@
 .menu {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-button {
   width: 40px;
+  height: 40px;
   background: url("../../static/img/icon-hamburger.svg") no-repeat center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--grayBlue);
+  padding: 0 .8em;
+}
+
+.menu-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-checkbox {
+  display: none;
+}
+
+.menu-checkbox:checked ~ .menu-button {
+  background: url("../../static/img/icon-close.svg") no-repeat center;
+}
+
+.menu-checkbox:checked ~ .menu {
+  display: block;
+  position: absolute;
+  top: 100%;
+  padding: 1em;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--darkBlue)), color-stop(90%, transparent));
+  background: linear-gradient(to bottom, var(--darkBlue) 0%, transparent 90%);
+}
+
+.menu-checkbox:checked ~ .menu .menu-item:first-of-type a {
+  padding-top: 2em;
+  border-radius: .5em .5em 0 0;
+}
+
+.menu-checkbox:checked ~ .menu .menu-item:last-of-type a {
+  padding-bottom: 2em;
+  border-radius: 0 0 .5em .5em;
+}
+
+.menu-checkbox:checked ~ .menu a {
+  background: white;
+  padding: .8em 1em;
+  color: var(--darkBlue);
+  font-size: 1.1em;
+  display: block;
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+@media screen and (min-width: 1024px) {
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .menu-button {
+    display: none;
+  }
 }
 /*# sourceMappingURL=menu.css.map */

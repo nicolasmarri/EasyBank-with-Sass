@@ -11,17 +11,46 @@
 
 <body>
     <header class="header">
-        <img src="./static/img/logo.svg" alt="">
-        <nav class="menu"></nav>
+        <div class="wrapper">
+            <div class="header-content">
+                <img class="header-logo" src="./static/img/logo.svg" alt="logo">
+                <input class="menu-checkbox" id="menu" type="checkbox">
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a href="">Home</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">About</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">Contact</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">Blog</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">Careers</a>
+                    </li>
+                </ul>
+                <button class="button">request invite</button>
+                <label for="menu" class="menu-button"></label>        
+            </div>
+        </div>
     </header>
     <section class="hero">
         <div class="wrapper">
-            <div class="hero-image"></div>
-            <h1 class="title-h1">Next generation digital banking</h1>
-            <p class="copy">Take your financial life online. Your Easybank account will be a one-stop-shop for spending,
-                saving,
-                budgeting, investing, and much more.</p>
-            <button class="button">Request Invite</button>
+            <div class="hero-content">
+                <div class="hero-image">
+                    <img src="./static/img/image-mockups.png" alt="image-mockups" class="hero-imageSrc">
+                </div>
+                <div class="hero-description">
+                    <h1 class="title-h1">Next generation digital banking</h1>
+                    <p class="copy">Take your financial life online. Your Easybank account will be a one-stop-shop for spending,
+                    saving,
+                    budgeting, investing, and much more.</p>
+                    <button class="button">Request Invite</button>
+                </div>
+            </div>  
         </div>
     </section>
     <section class="why">
@@ -101,12 +130,11 @@
                     </div>
                 </article>
             </div>
-        </div>
-           
+        </div>     
     </section>
     <footer class="footer">
         <div class="wrapper">
-            <svg xmlns="http://www.w3.org/2000/svg" 
+            <svg class="footer-logo" xmlns="http://www.w3.org/2000/svg" 
             width="139" height="20"><defs><linearGradient 
             id="a" x1="72.195%" x2="17.503%" y1="0%" y2="100%">
             <stop offset="0%" stop-color="#33D35E"/>
@@ -119,30 +147,32 @@
                 <a href="#" class="icon-twitter"></a>
                 <a href="#" class="icon-pinterest"></a>
                 <a href="#" class="icon-instagram"></a>
-            </p>    
-            <a href="#" class="footer-link">
-                About Us
-            </a>
-            <a href="#" class="footer-link">
-                Contact
-            </a>
-            <a href="#" class="footer-link">
-                Blog
-            </a>
-            <a href="#" class="footer-link">
-                Careers
-            </a>
-            <a href="#" class="footer-link">
-                Support
-            </a>
-            <a href="#" class="footer-link">
-                Privacy Policy
-            </a>
-        <div>    
-            <button class="button">
-                Request Invite
-            </button>
-        </div>
+            </p>
+            <div class="footer-links">    
+                <a href="#" class="footer-link">
+                    About Us
+                </a>
+                <a href="#" class="footer-link">
+                    Contact
+                </a>
+                <a href="#" class="footer-link">
+                    Blog
+                </a>
+                <a href="#" class="footer-link">
+                    Careers
+                </a>
+                <a href="#" class="footer-link">
+                    Support
+                </a>
+                <a href="#" class="footer-link">
+                    Privacy Policy
+                </a>
+            </div>
+            <div class="footer-button">    
+                <button class="button">
+                    Request Invite
+                </button>
+            </div>
             <p class="footer-copyright"> © Easybank. All Rights Reserved</p>
         </div>
     </footer>
